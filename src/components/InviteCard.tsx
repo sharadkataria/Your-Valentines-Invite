@@ -10,6 +10,7 @@ interface InviteCardProps {
 
 export default function InviteCard({ onPlayAgain }: InviteCardProps) {
   const [showImage, setShowImage] = useState(false);
+  const [showBtn, setShowBtn] = useState(true);
   const handleYesClick = () => {
     // Show celebration modal or directly trigger actions
     // alert('🎉 Yay! I can\'t wait to celebrate with you! 💕');
@@ -132,14 +133,19 @@ END:VCALENDAR`;
               className={`btn-primary ${styles.yesButton}`}
               onClick={handleYesClick}
             >
-              Yes! I'd Love To! 💕
+              {showBtn ? "Yes! I'd Love To! 💕" : "Please Say Yes! 😭 🙏🏻"}
             </button>
 
-            <button className={`btn-disabled`} disabled>
-              You don't have a choice! 😉
-            </button>
+            {showBtn && (
+              <button
+                className={`btn-disabled`}
+                onClick={() => setShowBtn(false)}
+              >
+                You don't have a choice! 😉
+              </button>
+            )}
 
-            <div className={styles.secondaryActions}>
+            {/* <div className={styles.secondaryActions}>
               <button className="btn-secondary" onClick={handleAddToCalendar}>
                 📅 Add to Calendar
               </button>
@@ -147,7 +153,7 @@ END:VCALENDAR`;
               <button className="btn-secondary" onClick={handleSendAnswer}>
                 💌 Send My Answer
               </button>
-            </div>
+            </div> */}
           </div>
         )}
 
