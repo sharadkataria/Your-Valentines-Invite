@@ -113,6 +113,17 @@ button {
   transform: translateY(-2px);
 }
 
+.btn-disabled {
+  background: var(--color-text-light);
+  color: var(--color-cream);
+  padding: 0.875rem 2rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid var(--color-cream);
+  transition: all 0.3s ease;
+}
+
 /* Cards */
 .card {
   background: white;

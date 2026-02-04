@@ -128,7 +128,7 @@ export default function TulipCatcher({ onComplete, gameCompleted }: TulipCatcher
                 animationDelay: `${Math.random() * 0.5}s`,
               }}
             >
-              {['💕', '❤️', '🌷', '✨', '🎉'][Math.floor(Math.random() * 5)]}
+              {['💕', '❤️', '🌹', '✨', '🎉'][Math.floor(Math.random() * 5)]}
             </div>
           ))}
         </div>
@@ -141,8 +141,8 @@ export default function TulipCatcher({ onComplete, gameCompleted }: TulipCatcher
     <section className={styles.gameSection}>
       <div className={styles.container}>
         <div className={styles.gameHeader}>
-          <h2>A Little Game for You 🌷</h2>
-          <p>Catch {TARGET_SCORE} falling tulips to reveal something special!</p>
+          <h2>Time For A Challenge 💪🏻</h2>
+          <p>Catch It If You Can 🌹</p>
         </div>
 
         {!gameStarted ? (
@@ -151,9 +151,10 @@ export default function TulipCatcher({ onComplete, gameCompleted }: TulipCatcher
               <div className={styles.gameIcon}>🎮</div>
               <h3>How to Play</h3>
               <ul className={styles.instructions}>
-                <li>🌷 Tap the falling tulips to catch them</li>
-                <li>🎯 Catch {TARGET_SCORE} tulips to win</li>
+                <li>🌹 Tap the falling roses to catch them</li>
+                <li>🎯 Catch {TARGET_SCORE} roses to win</li>
                 <li>⏱️ Don't let them fall off the screen!</li>
+                <li>❓ Are you game?</li>
               </ul>
               <button className="btn-primary" onClick={startGame}>
                 Start Game
@@ -188,13 +189,13 @@ export default function TulipCatcher({ onComplete, gameCompleted }: TulipCatcher
                   onTouchStart={(e) => handleTulipClick(tulip.id, e)}
                   aria-label="Catch tulip"
                 >
-                  🌷
+                  🌹
                 </button>
               ))}
               
               {tulips.length === 0 && (
                 <div className={styles.waitingMessage}>
-                  Get ready! Tulips are coming... 🌷
+                  Get ready! Roses are coming... 🌹
                 </div>
               )}
             </div>

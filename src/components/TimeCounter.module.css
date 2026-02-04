@@ -128,9 +128,8 @@
 
 .message {
   font-size: 1.25rem;
-  color: var(--color-text-dark);
+  color: #FF6B9D;
   font-weight: 500;
-  font-style: italic;
   max-width: 600px;
   margin: 0 auto;
 }

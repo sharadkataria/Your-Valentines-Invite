@@ -26,7 +26,7 @@ export default function Hero() {
     <section className={styles.hero}>
       {/* Floating tulip petals */}
       <div className={styles.petals}>
-        {[...Array(12)].map((_, i) => (
+        {[...Array(10)].map((_, i) => (
           <div
             key={i}
             className={styles.petal}
@@ -36,14 +36,14 @@ export default function Hero() {
               animationDuration: `${15 + Math.random() * 10}s`,
             }}
           >
-            🌷
+            😘
           </div>
         ))}
       </div>
 
       {/* Hero content */}
       <div className={styles.content} style={{ transform: `translateY(${scrollY * 0.5}px)` }}>
-        <div className={styles.tulipIcon}>🌷</div>
+        <div className={styles.tulipIcon}>🌹</div>
         <h1 className={styles.headline}>{loveConfig.heroHeadline}</h1>
         <p className={styles.subtext}>{loveConfig.heroSubtext}</p>
         <div className={styles.heartDivider}>

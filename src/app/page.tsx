@@ -23,7 +23,7 @@ export default function Home() {
     <main className="min-h-screen">
       <Hero />
       <TimeCounter />
-      <ParallaxTimeline />
+      {/* <ParallaxTimeline /> */}
       <TulipCatcher onComplete={() => setGameCompleted(true)} gameCompleted={gameCompleted} />
     </main>
   );
