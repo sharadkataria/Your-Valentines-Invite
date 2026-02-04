@@ -44,7 +44,13 @@ export const loveConfig = {
   
   // === TIMELINE MILESTONES ===
   // Add your relationship milestones here
-  milestones: [],
+  milestones: [
+    {
+      title: "Test",
+      date: "June 29, 2023",
+      description: "Test."
+    }
+  ],
   
   // === EMAIL CONFIGURATION ===
   // For the "Send me your answer" button
