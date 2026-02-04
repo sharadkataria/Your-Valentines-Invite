@@ -141,7 +141,7 @@ END:VCALENDAR`;
                 className={`btn-disabled`}
                 onClick={() => setShowBtn(false)}
               >
-                You don't have a choice! 😉
+                I Guess Not 💁🏽‍♀️
               </button>
             )}
 
